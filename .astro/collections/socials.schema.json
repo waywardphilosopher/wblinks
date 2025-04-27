@@ -1,0 +1,60 @@
+{
+  "$ref": "#/definitions/socials",
+  "definitions": {
+    "socials": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        },
+        "order": {
+          "type": "number"
+        },
+        "icon": {
+          "type": "string",
+          "enum": [
+            "github",
+            "twitter",
+            "bluesky",
+            "mastodon",
+            "linkedin",
+            "instagram",
+            "threads",
+            "facebook",
+            "youtube",
+            "twitch",
+            "tiktok",
+            "snapchat",
+            "reddit",
+            "pinterest",
+            "medium",
+            "dev",
+            "dribbble",
+            "behance",
+            "codepen",
+            "producthunt",
+            "discord",
+            "slack",
+            "whatsapp",
+            "telegram",
+            "email"
+          ]
+        },
+        "$schema": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "title",
+        "url",
+        "order",
+        "icon"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

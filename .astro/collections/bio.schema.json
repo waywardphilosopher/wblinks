@@ -1,0 +1,45 @@
+{
+  "$ref": "#/definitions/bio",
+  "definitions": {
+    "bio": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "theme": {
+          "type": "string",
+          "enum": [
+            "dark",
+            "light"
+          ]
+        },
+        "blur": {
+          "type": "string",
+          "enum": [
+            "no blur",
+            "blur"
+          ]
+        },
+        "avatar": {
+          "type": "string"
+        },
+        "background": {
+          "type": "string"
+        },
+        "$schema": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "theme",
+        "blur",
+        "avatar",
+        "background"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}
